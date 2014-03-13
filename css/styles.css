@@ -11,6 +11,7 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: orange;
  
 }
 
@@ -20,7 +21,7 @@ body {
 }
 
 i {
-  color: #fff;
+  color: orange;
   font-family: weather;
   font-size: 150px;
   font-weight: normal;
@@ -29,20 +30,21 @@ i {
 }
 
 
-h1 {
+h3 {
 	font-size: 4em;
 	color: orange;
 }
 
-li {
+ul li {
 	list-style: none;
 	font-size: 2em;
+	color: orange;
 }
 
 video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -100;
-background: url(..//img/rain.png) no-repeat;
+background: url(..//img/wind.png) no-repeat;
 background-size: cover;
 }
