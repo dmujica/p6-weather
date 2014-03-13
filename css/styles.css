@@ -11,7 +11,7 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background: orange;
+ 
 }
 
 #weather {
@@ -32,6 +32,10 @@ i {
 h1 {
 	font-size: 4em;
 	color: orange;
+}
+
+li {
+	list-style: none;
 }
 
 video#bgvid {
