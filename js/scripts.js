@@ -14,28 +14,28 @@ $(document).ready(function(){
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
       var temp, tomHi, tomLo, cityAndState; 
 
-      temp = weather.temp + '<span> f</span>';
+      //temp = weather.temp + '<span> f</span>';
       tomHi = weather.tomorrow.high;
       tomLo = weather.tomorrow.low;
-      //cityAndState = weather.city + ' , ' + weather.region;
+      cityAndState = weather.city + ' , ' + weather.region;
 
       console.log(cityAndState);
 
       // Display Weather
-      $('.temp').html(temp);
+      //$('.temp').html(temp);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
-      //$('.cityAndState').html(cityAndState);
+      $('.cityAndState').html(cityAndState);
 
     },
-    
+ 
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
- 
+  
   });
 
-  if (navigator.geolocation) {
+   if (navigator.geolocation) {
     // Yes! Show button
     $('.getGeolocation').show(); 
   } else {
