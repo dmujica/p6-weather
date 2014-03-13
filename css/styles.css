@@ -39,6 +39,7 @@ ul li {
 	list-style: none;
 	font-size: 2em;
 	color: orange;
+	padding-top: 50px;
 }
 
 video#bgvid {
