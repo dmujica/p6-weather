@@ -18,10 +18,7 @@ $(document).ready(function(){
       wthCd = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
       tomHi = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.high+' </h2>';
       tomLo = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.low+' </h2>';
-      cityAndState = weather.city + ' , ' + weather.region;
-
-      console.log(cityAndState);
-
+      
       // Display Weather
       //$('.temp').html(temp);
       $('.wthCd').html(wthCd);
