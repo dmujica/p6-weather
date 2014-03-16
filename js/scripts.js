@@ -15,16 +15,16 @@ $(document).ready(function(){
       var temp, tomHi, tomLo, cityAndState; 
 
       //temp = weather.temp + '<span> f</span>';
-      tomCd = weather.tomorrow.code;
-      tomHi = weather.tomorrow.high;
-      tomLo = weather.tomorrow.low;
+      wthCd = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      tomHi = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.high+' </h2>';
+      tomLo = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.low+' </h2>';
       cityAndState = weather.city + ' , ' + weather.region;
 
       console.log(cityAndState);
 
       // Display Weather
       //$('.temp').html(temp);
-      $('.tomCd').html(tomCd);
+      $('.wthCd').html(wthCd);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
