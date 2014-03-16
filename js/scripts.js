@@ -15,6 +15,7 @@ $(document).ready(function(){
       var temp, tomHi, tomLo, cityAndState; 
 
       //temp = weather.temp + '<span> f</span>';
+      tomCd = weather.tomorrow.code;
       tomHi = weather.tomorrow.high;
       tomLo = weather.tomorrow.low;
       cityAndState = weather.city + ' , ' + weather.region;
@@ -23,6 +24,7 @@ $(document).ready(function(){
 
       // Display Weather
       //$('.temp').html(temp);
+      $('.tomCd').html(tomCd);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
