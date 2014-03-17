@@ -16,9 +16,10 @@ $(document).ready(function(){
 
       //temp = weather.temp + '<span> f</span>';
       wthCd = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      tomHi = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.high+' </h2>';
-      tomLo = '<h2><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.low+' </h2>';
-      
+      tomHi = '<h3><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.high+' </h3>';
+      tomLo = '<h3><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.low+' </h3>';
+      cityAndState = weather.city + ' , ' + weather.region;
+
       // Display Weather
       //$('.temp').html(temp);
       $('.wthCd').html(wthCd);
@@ -49,7 +50,7 @@ $('.getGeolocation').on('click', function() {
     //load weather using your lat/lng coordinates. See _loadWeather()_ below
     loadWeather(position.coords.latitude+','+position.coords.longitude); 
     // See latitute & longitude. Note, wait a few seconds
-    console.log(position.coords.latitude+','+position.coords.longitude);
+    //console.log(position.coords.latitude+','+position.coords.longitude);
   });
   
 });
@@ -73,7 +74,7 @@ var loadWeather = function(location) {
       $('.city').text(city);
       
       // See console for _weather_ object
-      console.log(weather);
+      //console.log(weather);
     }
   
   });

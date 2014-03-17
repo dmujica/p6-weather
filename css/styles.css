@@ -74,7 +74,6 @@ body {
 i {
   color: orange;
   font-family: weather;
-  font-size: 150px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
@@ -93,3 +92,17 @@ ul li {
 	padding-top: 50px;
 }
 
+button{
+  background: grey;
+  font: 'Open Sans', "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-transition: background-color 600ms ease-out;
+-moz-transition: background-color 600ms ease-out;
+transition: background-color 600ms ease-out;
+}
+
+button:focus,
+button:hover,
+button:active {
+  background: darkgrey;
+}
