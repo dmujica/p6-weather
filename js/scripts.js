@@ -79,7 +79,7 @@ var loadWeather = function(location) {
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
-      $('.icon').text(icon);
+      $('.icon').html(icon);
       
       // See console for _weather_ object
       //console.log(weather);
