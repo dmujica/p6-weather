@@ -179,7 +179,7 @@ li{
 }
 
 .cityAndState {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .wthCd i{
@@ -187,6 +187,7 @@ li{
 }
 
 .tempDis {
+  margin-top: 0;
   margin-bottom: 55px;
 }
 
