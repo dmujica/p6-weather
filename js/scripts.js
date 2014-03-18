@@ -72,7 +72,7 @@ var loadWeather = function(location) {
       // Get & store temperature
       var temp = weather.temp;
       // Get & store city
-      var city = weather.city;
+      var city = weather.city + ' , ' + weather.region;
 
       var icon = '<i class="icon-'+weather.code+'"></i>';
       
