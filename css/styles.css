@@ -79,18 +79,21 @@ i {
   line-height: 1.0;
 }
 
+h1,
 h2,
 h3 {
 	color: orange;
-  font-size: 2em;
 }
 
-ul li {
-	list-style: none;
-	font-size: 2em;
-	color: orange;
-	padding-top: 50px;
+.cityAndState {
+  padding-top: 30px;
 }
+
+.wthCd i{
+  font-size: 200px;
+}
+
+
 
 button{
   background: grey;
@@ -107,6 +110,3 @@ button:active {
   background: darkgrey;
 }
 
-.wthImg {
-  width: 100%;
-}

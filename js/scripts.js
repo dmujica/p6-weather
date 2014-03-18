@@ -14,19 +14,20 @@ $(document).ready(function(){
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
       var temp, tomHi, tomLo, cityAndState; 
 
-      //temp = weather.temp + '<span> f</span>';
-      wthCd = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      tomHi = '<h3><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.high+' </h3>';
-      tomLo = '<h3><i class="icon-'+weather.code+'"></i> '+weather.tomorrow.low+' </h3>';
+      temp = weather.temp+'&deg;'+weather.units.temp;
+      wthCd = '<i class="icon-'+weather.code+'"></i>';
+      todTem = weather.temp;
+      tomHi = weather.tomorrow.high;
+      tomLo = weather.tomorrow.low;
       cityAndState = weather.city + ' , ' + weather.region;
-      wthImg = weather.image;
+  
       // Display Weather
-      //$('.temp').html(temp);
+      $('.temp').html(temp);
       $('.wthCd').html(wthCd);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
-      $('.wthImg').html(wthImg);
+      
 
     },
  
