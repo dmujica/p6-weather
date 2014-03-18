@@ -66,77 +66,94 @@
     Background
 =======================*/
 /*winds*/
-.bg0,
-.bg1,
-.bg2,
 .bg23,
-.bg24 {
+.bg24
+ {
   background: darkcyan;
   width: 100%;
   height: 100%;
 }
 
-
-
-/*Rain*/
+/*severe weather and hazardous road conditons*/
+.bg0,
+.bg1,
+.bg2,
 .bg3,
-.bg4,
 .bg5,
 .bg6,
 .bg7,
 .bg8,
 .bg9,
 .bg10,
-.bg11,
-.bg12,
-.bg35,
-.bg37,
-.bg38,
-.bg39,
-.bg40,
-.bg45,
-.bg47
- {
- background: dimgray;
-}
- 
-/*Snow*/
 .bg13,
-.bg14,
 .bg15,
-.bg16,
-.bg17,
-.bg18,
+.bg23,
+.bg35,
+.bg36,
 .bg41,
-.bg42,
-.bg43,
-.bg46 {
-background: darkgray;
+.bg43 {
+  background: tomato;
+  width: 100%;
+  height: 100%;
 }
 
-/*clouds*/
+/*reduced visibility*/
 .bg19,
 .bg20,
 .bg21,
-.bg22,
-.bg26,
-.bg27,
-.bg28,
-.bg29,
-.bg30,
-.bg44 {
- background: deepskyblue;
+.bg22 {
+  background: black;
+  width: 100%;
+  height: 100%;
 }
 
-/*No clouds*/
 
-.bg31,
+/*Rain*/
+.bg11,
+.bg12,
+.bg40,
+ {
+ background: dimgray;
+ width: 100%;
+ height: 100%;
+}
+ 
+/*Snow*/
+ .bg14,
+ .bg16,
+ .bg42, 
+ .bg46 {
+background: darkgray;
+width: 100%;
+height: 100%;
+}
+
+/*day time cloudy*/
+ .bg26,
+ .bg28,
+ .bg30, 
+ .bg44 {
+ background: lightsteelblue;
+ width: 100%;
+ height: 100%;
+}
+
+/*sunny*/
+
 .bg32,
-.bg36,
-.bg25,
-.bg33,
-.bg34 {
+.bg33 {
  background: goldenrod;
+ width: 100%;
+ height: 100%;
+}
+
+/*night*/
+.bg27,
+.bg29,
+.bg33 {
+  background: midnightblue;
+  width: 100%;
+  height: 100%;
 }
 
 /*Error*/
@@ -168,7 +185,6 @@ i {
   font-family: weather;
   font-weight: normal;
   font-style: normal;
-  line-height: 1.0;
 }
 
 h1,
@@ -183,7 +199,7 @@ li{
 }
 
 .wthCd i{
-  font-size: 200px;
+  font-size: 175px;
 }
 
 .tempDis {
