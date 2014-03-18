@@ -70,7 +70,7 @@ var loadWeather = function(location) {
     success: function(weather) {
       
       // Get & store temperature
-      var temp = weather.temp +'&deg;'+weather.units.temp;
+      var temp = weather.temp+'&deg;'+weather.units.temp;
       // Get & store city
       var city = weather.city + ' , ' + weather.region;
 
