@@ -1,6 +1,17 @@
 /*=====================
     Font
 =======================*/
+@font-face {
+    font-family: 'folks-lightregular';
+    src: url('../font/Folks-Light-webfont.eot');
+    src: url('../font/Folks-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Folks-Light-webfont.woff') format('woff'),
+         url('../font/Folks-Light-webfont.ttf') format('truetype'),
+         url('../font/Folks-Light-webfont.svg#folks-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'weather';
@@ -168,13 +179,6 @@ height: 100%;
     Styling Display
 =======================*/
 
-body {
-  font: 13px "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: orange;
- 
-}
-
 #weather {
   text-align: center;
   text-transform: uppercase;
@@ -191,20 +195,23 @@ h1,
 h2,
 h3,
 li{
+  font-family: 'folks-lightregular';
 	color: white;
 }
 
 .cityAndState {
   padding-top: 10px;
+  margin: 0;
 }
 
 .wthCd i{
   font-size: 175px;
+  margin: 0;
 }
 
 .tempDis {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /*=====================
@@ -216,9 +223,9 @@ li{
 
  li i{
   position: relative;
-  top: 30px;
+  top: 35px;
   right: 25px;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .extForecastone,
