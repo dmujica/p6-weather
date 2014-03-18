@@ -152,7 +152,7 @@ background: darkgray;
 =======================*/
 
 body {
-  font: 13px 'Open Sans', "Helvetica Neue", 
+  font: 13px "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
   color: orange;
  
@@ -173,7 +173,8 @@ i {
 
 h1,
 h2,
-h3{
+h3,
+li{
 	color: white;
 }
 
@@ -184,6 +185,31 @@ h3{
 .wthCd i{
   font-size: 200px;
 }
+
+.tempDis {
+  margin-bottom: 55px;
+}
+
+/*=====================
+    Ext Forecast
+=======================*/
+ li i{
+  position: relative;
+  top: 30px;
+  right: 25px;
+  font-size: 1.5em;
+}
+
+.extForecastone,
+.extForecasttwo,
+.extForecastthree,
+.extForecastfour {
+  display: inline;
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
 
 /*=====================
     Styling Geo Location

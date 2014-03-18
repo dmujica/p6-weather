@@ -12,15 +12,19 @@ $(document).ready(function(){
       
       // Get & Store Weather Data
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var temp, tomHi, tomLo, cityAndState, conditionCode; 
+      var temp, tomHi, tomLo, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
 
       temp = weather.temp+'&deg;'+weather.units.temp;
       wthCd = '<i class="icon-'+weather.code+'"></i>';
       todTem = weather.temp;
-      tomHi = weather.tomorrow.high;
-      tomLo = weather.tomorrow.low;
+      tomHi = weather.tomorrow.high+'&deg;'+weather.units.temp;
+      tomLo = weather.tomorrow.low+'&deg;'+weather.units.temp;
       cityAndState = weather.city + ' , ' + weather.region;
       conditionCode = weather.code;
+      extForecastone = weather.forecasts.one.day+'<i class="icon-'+weather.forecasts.one.code+'"></i>';
+      extForecasttwo = weather.forecasts.two.day+'<i class="icon-'+weather.forecasts.two.code+'"></i>';
+      extForecastthree = weather.forecasts.three.day+'<i class="icon-'+weather.forecasts.three.code+'"></i>';
+      extForecastfour = weather.forecasts.four.day+'<i class="icon-'+weather.forecasts.four.code+'"></i>';
 
       console.log(conditionCode);
   
@@ -31,6 +35,12 @@ $(document).ready(function(){
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
       $('body').addClass('bg' + conditionCode);
+      $('.extForecastone').html(extForecastone);
+      $('.extForecasttwo').html(extForecasttwo);
+      $('.extForecastthree').html(extForecastthree);
+      $('.extForecastfour').html(extForecastfour);
+
+      
 
     },
  
