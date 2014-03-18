@@ -12,9 +12,9 @@ $(document).ready(function(){
       
       // Get & Store Weather Data
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var temp, tomHi, tomLo, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
+      var tempDis, tomHi, tomLo, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
 
-      temp = weather.temp+'&deg;'+weather.units.temp;
+      tempDis = weather.temp+'&deg;'+weather.units.temp;
       wthCd = '<i class="icon-'+weather.code+'"></i>';
       todTem = weather.temp;
       tomHi = weather.tomorrow.high+'&deg;'+weather.units.temp;
@@ -29,7 +29,7 @@ $(document).ready(function(){
       console.log(conditionCode);
   
       // Display Weather
-      $('.tempDis').html(temp);
+      $('.tempDis').html(tempDis);
       $('.wthCd').html(wthCd);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
@@ -68,6 +68,7 @@ $('.getGeolocation').on('click', function() {
     //console.log(position.coords.latitude+','+position.coords.longitude);
   });
   
+  $('body').removeClass('tempDis');
 });
 
 // 3. Wrap SimpleWeather in a function called _loadWeather()
