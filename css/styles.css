@@ -193,6 +193,10 @@ li{
 /*=====================
     Ext Forecast
 =======================*/
+ ul {
+  margin: none;
+ }
+
  li i{
   position: relative;
   top: 30px;
