@@ -73,10 +73,13 @@ var loadWeather = function(location) {
       var temp = weather.temp;
       // Get & store city
       var city = weather.city;
+
+      var icon = weather.code;
       
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
+      $('.icon').text(icon);
       
       // See console for _weather_ object
       //console.log(weather);
