@@ -148,7 +148,7 @@ background: darkgray;
 }
 
 /*=====================
-    Styling
+    Styling Display
 =======================*/
 
 body {
@@ -185,6 +185,9 @@ h3 {
   font-size: 200px;
 }
 
+/*=====================
+    Styling Geo Location
+=======================*/
 
 
 button{
