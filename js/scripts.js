@@ -12,7 +12,7 @@ $(document).ready(function(){
       
       // Get & Store Weather Data
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var temp, tomHi, tomLo, cityAndState; 
+      var temp, tomHi, tomLo, cityAndState, conditionCode; 
 
       temp = weather.temp+'&deg;'+weather.units.temp;
       wthCd = '<i class="icon-'+weather.code+'"></i>';
@@ -21,6 +21,8 @@ $(document).ready(function(){
       tomLo = weather.tomorrow.low;
       cityAndState = weather.city + ' , ' + weather.region;
       conditionCode = weather.code;
+
+      console.log(conditionCode);
   
       // Display Weather
       $('.temp').html(temp);
