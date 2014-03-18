@@ -12,13 +12,10 @@ $(document).ready(function(){
       
       // Get & Store Weather Data
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var tempDis, tomHi, tomLo, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
+      var tempDis, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
 
       tempDis = weather.temp+'&deg;'+weather.units.temp;
       wthCd = '<i class="icon-'+weather.code+'"></i>';
-      todTem = weather.temp;
-      tomHi = weather.tomorrow.high+'&deg;'+weather.units.temp;
-      tomLo = weather.tomorrow.low+'&deg;'+weather.units.temp;
       cityAndState = weather.city + ' , ' + weather.region;
       conditionCode = weather.code;
       extForecastone = weather.forecasts.one.day+'<i class="icon-'+weather.forecasts.one.code+'"></i>';
@@ -31,8 +28,6 @@ $(document).ready(function(){
       // Display Weather
       $('.tempDis').html(tempDis);
       $('.wthCd').html(wthCd);
-      $('.tomHi').html(tomHi);
-      $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
       $('body').addClass('bg' + conditionCode);
       $('.extForecastone').html(extForecastone);
@@ -68,7 +63,7 @@ $('.getGeolocation').on('click', function() {
     //console.log(position.coords.latitude+','+position.coords.longitude);
   });
   
-  $('body').removeClass('tempDis');
+  $('.cityAndState, .tempDis, .wthCd, .extForecastone, .extForecasttwo, .extForecastthree, .extForecastfour').text('');
 });
 
 // 3. Wrap SimpleWeather in a function called _loadWeather()
