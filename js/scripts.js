@@ -25,7 +25,7 @@ $(document).ready(function(){
       console.log(conditionCode);
   
       // Display Weather
-      $('.temp').html(temp);
+      $('.tempDis').html(temp);
       $('.wthCd').html(wthCd);
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
