@@ -205,3 +205,6 @@ button:active {
   background: darkgrey;
 }
 
+.icon {
+  font-size: 200px;
+}
