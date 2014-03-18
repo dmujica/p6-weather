@@ -252,6 +252,11 @@ button:active {
   background: darkgrey;
 }
 
+.city,
 .icon {
-  font-size: 200px;
+  margin: 0;
+}
+
+.icon {
+   font-size: 150px;
 }
