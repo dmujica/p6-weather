@@ -169,7 +169,7 @@ li{
     Ext Forecast
 =======================*/
  ul {
-  margin: none;
+  margin: 0;
  }
 
  li i{
