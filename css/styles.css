@@ -235,13 +235,8 @@ button:active {
 
 
 @media screen and (max-width: 1024px) {
-  
-        
-    }
-
-@media screen and (max-width: 768px) {
-  .wthCd {
-  left: 440px;
+    .wthCd {
+  left: 550px;
   top: 25px;
 }
 
@@ -261,4 +256,13 @@ li i{
   font-size: 5em;
 }
         
+    }
+
+@media screen and (max-width: 768px) {
+  .wthCd {
+  left: 440px;
+  top: 25px;
+}
+
+
     }
