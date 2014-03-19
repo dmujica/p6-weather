@@ -281,7 +281,7 @@ button:active {
 
 .current i {
   font-size: 3em;
-  position: absolute;
+  position: relative;
   top: 95px;
   left: 240px;
 }
