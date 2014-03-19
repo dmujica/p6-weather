@@ -188,6 +188,9 @@ li{
   padding: 7px;
 }
 
+.extended {
+  padding: 0;
+}
 
 /*=====================
     Styling Geo Location
