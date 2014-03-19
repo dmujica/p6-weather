@@ -83,9 +83,8 @@ var loadWeather = function(location) {
       var city = weather.city + ' , ' + weather.region;
        // Get & store temperature
       var temp = weather.temp +'&deg;'+ weather.units.temp;
-      // get & store weather code
       
-      // get and store text conditon
+      // get and store text conditon and code
       var current = weather.currently+'<i class="icon-'+weather.code+'"></i>';
       
       // Output to hooks in HTML
