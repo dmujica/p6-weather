@@ -86,13 +86,13 @@ var loadWeather = function(location) {
       // get & store weather code
       var icon = '<i class="icon-'+weather.code+'"></i>';
       // get and store text conditon
-      var conditon = weather.currently;
+      var current = weather.currently;
       
       // Output to hooks in HTML
       $('.city').text(city);
       $('.temp').html(temp);
       $('.icon').html(icon);
-      $('.condition').html(condition);
+      $('.current').html(current);
       
       // See console for _weather_ object
       //console.log(weather);
