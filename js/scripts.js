@@ -12,8 +12,11 @@ $(document).ready(function(){
       
       // Get & Store Weather Data
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var tempDis, cityAndState, conditionCode, extForecastone, extForecasttwo, extForecastthree, extForecastfour; 
+      var currentCond, tempDis, wthCd, cityAndState, conditionCode, extForecastone, extForecasttwo, 
+      extForecastthree, extForecastfour; 
 
+
+      currentCond = weather.currently;
       tempDis = weather.temp+'&deg;'+weather.units.temp;
       wthCd = '<i class="icon-'+weather.code+'"></i>';
       cityAndState = weather.city + ' , ' + weather.region;
@@ -26,6 +29,7 @@ $(document).ready(function(){
       console.log(conditionCode);
   
       // Display Weather
+      $('.currentCond').html(currentCond);
       $('.tempDis').html(tempDis);
       $('.wthCd').html(wthCd);
       $('.cityAndState').html(cityAndState);
@@ -63,7 +67,7 @@ $('.getGeolocation').on('click', function() {
     //console.log(position.coords.latitude+','+position.coords.longitude);
   });
   
-  $('.cityAndState, .tempDis, .wthCd, .extForecastone, .extForecasttwo, .extForecastthree, .extForecastfour').text('');
+  $('.cityAndState, .tempDis, .wthCd, .extForecastone, .extForecasttwo, .extForecastthree, .extForecastfour, .currentCond').text('');
 });
 
 // 3. Wrap SimpleWeather in a function called _loadWeather()
