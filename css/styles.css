@@ -234,7 +234,7 @@ button:active {
 =======================*/
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .wthCd {
   left: 550px;
   top: 25px;
@@ -258,7 +258,7 @@ li i{
         
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 768px){
   .wthCd {
   left: 440px;
   top: 25px;
