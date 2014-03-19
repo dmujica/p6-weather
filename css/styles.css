@@ -154,7 +154,7 @@ li{
   margin: 0; 
   position: absolute;
   top: 15px;
-  left: 235px;
+  left: 220px;
 }
 
 
@@ -270,10 +270,10 @@ li i{
 
     }
 
-@media screen and (min-width: 390px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 600px){
   .wthCd {
-  left: 440px;
-  top: 25px;
+  left: 275px;
+
 }
 
 
