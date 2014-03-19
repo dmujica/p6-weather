@@ -277,6 +277,8 @@ button:active {
 
 .temp {
   font-size: 4em;
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
 .current i {
@@ -284,4 +286,6 @@ button:active {
   position: relative;
 }
 
-
+.current {
+  margin: 0;
+}
