@@ -176,7 +176,7 @@ height: 100%;
 }
 
 /*=====================
-    Styling Display
+    Font styling
 =======================*/
 
 #weather {
@@ -199,15 +199,24 @@ li{
 	color: white;
 }
 
+/*=====================
+    weather display
+=======================*/
+
+
 .cityAndState {
-  padding-top: 10px;
+  padding-top: 50px;
   margin: 0;
 }
 
 .wthCd {
-  font-size: 15em;
+  font-size: 8em;
   margin: 0; 
+  position: absolute;
+  top: 15px;
+  left: 250px;
 }
+
 
 .tempDis{
   margin-top: 0;
